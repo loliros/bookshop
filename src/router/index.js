@@ -4,6 +4,7 @@ import homeRouter from './home'
 import shopRouter from './shop'
 import mineRouter from './mine'
 
+
 Vue.use(VueRouter)
 
   const routes = [

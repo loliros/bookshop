@@ -1,10 +1,11 @@
 <template>
   <div id="main">
+    <div id="Home">
       <Header />
       <Carousel />
       <HomeNav />
       <specialOffer />
-        <router-view />
+    </div>
       <TabBar />
   </div>
 </template>
@@ -28,5 +29,5 @@ export default {
 </script>
 
 <style scope>
-
+#Home{ height:90vh;}
 </style>
