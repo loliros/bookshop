@@ -1,4 +1,4 @@
-export default {
+export default{
     path : '/shop',
-    component : () => import('../../views/Shop')
+    component : () => import('../../views/Shop'),
 }

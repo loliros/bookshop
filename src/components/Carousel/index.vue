@@ -1,8 +1,8 @@
 <template>
     <div class="block">
-        <el-carousel trigger="click" height="150px">
-        <el-carousel-item v-for="item in 4" :key="item">
-            <h3 class="small">{{ item }}</h3>
+        <el-carousel trigger="click">
+        <el-carousel-item v-for="(item,value) in imgSrc" :key="value">
+            <img class="Carousel" :src="item.src" alt="图片加载失败">
         </el-carousel-item>
         </el-carousel>
     </div>
@@ -11,23 +11,33 @@
 <script>
 export default {
     name : 'Carousel',
+    data(){
+        return{
+            imgSrc : [
+                {
+                    id : 1,
+                    src : '/images/1.png',
+                },
+                {
+                    id : 2,
+                    src : '/images/2.png',
+                },
+                {
+                    id : 3,
+                    src : '/images/3.jpg',
+                },
+                {
+                    id : 4,
+                    src : '/images/4.png',
+                }
+            ]
+        }
+    }
 }
 </script>
 
 <style scope>
-    .el-carousel__item h3 {
-    color: #475669;
-    font-size: 14px;
-    opacity: 0.75;
-    line-height: 150px;
-    margin: 0;
-  }
-
-  .el-carousel__item:nth-child(2n) {
-     background-color: #99a9bf;
-  }
-  
-  .el-carousel__item:nth-child(2n+1) {
-     background-color: #d3dce6;
-  }
+.Carousel{
+    width: 100%;
+}
 </style>

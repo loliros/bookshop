@@ -5,11 +5,15 @@
               <i class="el-icon-s-home"></i>
               <p>首页</p>
           </router-link>
-            <router-link to="/shop" tag="li">
-              <i class="el-icon-shopping-cart-full"></i>
-              <p>书店</p>
+          <router-link to="/search" tag="li">
+              <i class="el-icon-search"></i>
+              <p>搜索</p>
           </router-link>
-            <router-link to="/mine" tag="li">
+          <router-link to="/shop" tag="li">
+              <i class="el-icon-shopping-cart-full"></i>
+              <p>购物车</p>
+          </router-link>
+          <router-link to="/mine" tag="li">
               <i class="el-icon-user"></i>
               <p>我的</p>
           </router-link>
