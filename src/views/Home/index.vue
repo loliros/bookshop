@@ -6,8 +6,8 @@
       <div class="Carousel">
         <Carousel />
       </div>
-      <div class="cententleft"><HomCentent /></div>
-      <div class="cententright">246</div>
+      <div class="cententleft"><HomCententleft /></div>
+      <div class="cententright"><HomeCententright /></div>
       <div class="footer">底部</div>
     </div>
   </div>
@@ -17,14 +17,16 @@
 import Header from '../../components/Header';
 import Carousel from '../../components/Carousel';
 import HomeNav from '../../components/HomeNav';
-import HomCentent from '../../components/HomeCentent'
+import HomCententleft from '../../components/HomeCententleft';
+import HomeCententright from '../../components/HomeCententright';
 export default {
     name : 'Home',
     components : {
         Header,
         Carousel,
         HomeNav,
-        HomCentent,
+        HomCententleft,
+        HomeCententright,
     }
 }
 </script>
@@ -40,7 +42,7 @@ export default {
                         'cententleft cententleft  cententright cententright'
                         'footer footer footer footer';
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 15% 50% 25% 10%;
+  grid-template-rows: 15% 50% 35% 10%;
 }
 .homeNav{
   grid-area: nav;

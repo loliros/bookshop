@@ -1,12 +1,9 @@
 <template>
   <div id="HomeCentent">
       <p><span class="left">特价优惠</span><span class="right">更多>>></span></p>
-      <div class="centent" >
-          <div v-for="(item,value) in imgSrc" :key="value">
-            <img :src="item.src" alt="图片加载失败!">
-            <p>{{item.centent}}</p>
-          </div>
-          
+      <div class="centent">
+          <img :src="imgSrc[0].src" alt="图片加载失败!">
+          <div><p>{{imgSrc[0].centent}}</p></div>
       </div>
   </div>
 </template>
@@ -20,7 +17,7 @@ export default {
                 {
                     id : 1,
                     src : '/images/s1.jpg',
-                    centent : '一二三'
+                    centent : '一粒尘可填海，一根草斩尽日月星辰，弹指间天翻地覆。群雄并起，万族林立，诸圣争霸，乱天动地。问苍茫大地，谁主沉浮？！一个少年从大荒中走出，一切从这里开始……'
                 },
                 {
                     id : 2,
@@ -61,21 +58,24 @@ export default {
     cursor: pointer;
 }
 #HomeCentent .centent{
+    width: 100%;
+    height: 24.5vh;
     clear: both;
     display: grid;
-    grid-template-columns: repeat(4,25%);
+    grid-template-columns: 25% 75%;
     grid-template-rows: 100%;
-    justify-items: center;
+    border-top: 1px solid silver;
+}
+#HomeCentent .centent img{
+    width: 70%;
+    justify-self: center;
+    align-self: center;
 }
 #HomeCentent .centent > div{
-
+    border-left: 1px solid silver;
+}
+#HomeCentent .centent > div > p{
     margin: 5px;
-}
-#HomeCentent .centent > div p{
-    font-size: 12px;
-    text-align: center;
-}
-#HomeCentent .centent >div img{
-    height: 80px;
+    text-indent: 25px;
 }
 </style>
