@@ -8,7 +8,7 @@
       </div>
       <div class="cententleft"><HomCententleft /></div>
       <div class="cententright"><HomeCententright /></div>
-      <div class="footer">底部</div>
+      <div class="footer"><HomeFooter /></div>
     </div>
   </div>
 </template>
@@ -16,9 +16,10 @@
 <script>
 import Header from '../../components/Header';
 import Carousel from '../../components/Carousel';
-import HomeNav from '../../components/HomeNav';
+import HomeNav from '../../components/Nav';
 import HomCententleft from '../../components/HomeCententleft';
 import HomeCententright from '../../components/HomeCententright';
+import HomeFooter from '../../components/HomeFooter';
 export default {
     name : 'Home',
     components : {
@@ -27,6 +28,7 @@ export default {
         HomeNav,
         HomCententleft,
         HomeCententright,
+        HomeFooter,
     }
 }
 </script>

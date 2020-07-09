@@ -21,18 +21,18 @@ export default {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 20% 60%;
     grid-template-rows: 100%;
 }
 .logo{
-    width: 50%;
+    width: 100%;
     justify-self: start;
 }
 #HomeNav ul{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 100%;
-    width: 100%;
+    width: 65%;
     height: 100%;
     align-items: end;
     justify-items: center;

@@ -1,6 +1,7 @@
 <template>
   <div>
       <Header title="我的"/>
+      <div class="Nav"><Nav /></div>
       <div id="Mine">
         <div class="upload"><Upload /></div>
         <div class="usermassage">
@@ -19,20 +20,19 @@
         </div>
         <div class="centent"><router-view /></div>
       </div>
-      <TabBar />
   </div>
 </template>
 
 <script>
 import Header from '../../components/Header';
-import TabBar from '../../components/TabBar';
 import Upload from '../../components/imageUpload';
+import Nav from '../../components/HomeNav';
 export default {
     name : 'Mine',
     components : {
       Header,
-      TabBar,
       Upload,
+      Nav,
     },
     data(){
       return{
@@ -55,6 +55,10 @@ export default {
   grid-template-columns: 35% 63%;
   grid-template-rows: 48% 48%;
   grid-gap: 1rem;
+}
+.Nav{
+  width: 90%;
+  margin:  0 auto;
 }
 
 #Mine > div{
